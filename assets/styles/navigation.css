@@ -1,4 +1,15 @@
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 0.5em;
+}
+
 .main-nav ul {
+    margin-left: 30vw;
     display: flex;
     padding: 0;
 }
@@ -9,6 +20,7 @@
 }
 
 .main-nav a {
+    display: block;
     color: darkorange;
     text-decoration: none;
     padding: 0.5em 1em;
