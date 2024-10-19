@@ -1,5 +1,6 @@
 .main-nav ul {
     display: flex;
+    padding: 0;
 }
 
 .main-nav li {
@@ -11,4 +12,11 @@
     color: darkorange;
     text-decoration: none;
     padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.main-nav li.current-page > a,
+.main-nav a:hover {
+    background-color: darkorange;
+    color: white;
 }
