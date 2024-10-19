@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page.meta-description %}
+    <meta name="description" content="{{ page.meta-description }}">
+    {% endif %}
+    <link rel="stylesheet" href="/assets/styles/site.css">
+    <title>{{ page.title }} - {{ site.title }}</title>
+</head>
+
+<body class="layout-{{ page.layout }}">
+
+    <div class="site">
+    <!-- <div class="site{% if page.layout == 'blog' %} blog{% endif %}"> -->
+        <header class="site-header">
+            <h1 class="site-title">HTML & CSS Workshop</h1>
+
+            {% include navigation.html %}
+        </header>
