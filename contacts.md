@@ -1,6 +1,7 @@
 ---
 layout: main
 title: Contacts
+permalink: /contacts/
 ---
 
-Working hours ....
+Hello there from contacts!

@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: blog
 title:  "Second Post"
 date:   2024-10-18 11:02:37 +0300
 categories: jekyll update
