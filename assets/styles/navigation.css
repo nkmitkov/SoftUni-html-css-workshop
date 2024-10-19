@@ -1,0 +1,14 @@
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav li {
+    display: block;
+    list-style: none outside;
+}
+
+.main-nav a {
+    color: darkorange;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}

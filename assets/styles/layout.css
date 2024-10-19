@@ -1,0 +1,9 @@
+.site {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+}
