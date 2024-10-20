@@ -1,0 +1,23 @@
+:root {
+    color-scheme: light dark;
+}
+
+/* body.theme-light {
+    --clr-background: #fff;
+    --clr-text: #000;
+}
+
+body.theme-dark {
+    --clr-background: #000;
+    --clr-text: #fff;
+} */
+
+#light:checked ~ .site {
+    --clr-background: #fff;
+    --clr-text: #000;
+}
+
+#dark:checked ~ .site {
+    --clr-background: #000;
+    --clr-text: #fff;
+}

@@ -11,7 +11,10 @@
     <title>{{ page.title }} - {{ site.title }}</title>
 </head>
 
-<body class="layout-{{ page.layout }} page-{{ page.title | slugify }}">
+<body class="layout-{{ page.layout }} page-{{ page.title | slugify }} theme-dark">
+
+    <input type="radio" name="theme" id="light">
+    <input type="radio" name="theme" id="dark">
 
     <div class="site">
     <!-- <div class="site{% if page.layout == 'blog' %} blog{% endif %}"> -->
