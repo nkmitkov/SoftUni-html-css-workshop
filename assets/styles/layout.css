@@ -16,6 +16,16 @@ body {
     padding-bottom: 1em;
     border-bottom: 1px solid light-dark(#eee, #222);
     margin-bottom: 2em;
+    opacity: 0;
+    transform: translateY(-5em);
+    transition:
+        opacity 0.5s ease-in,
+        transform 0.5s ease-in;
+}
+
+body.loaded .site-header {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .site-title {
@@ -47,10 +57,74 @@ body.layout-blog .site .site-footer {
     flex: 0 0 100%;
 }
 
-body.layout-blog .site > main {
+body.layout-blog .site>main {
     flex: 1 1 600px;
 }
 
-body.layout-blog .site > aside {
+body.layout-blog .site>aside {
     flex: 1 1 200px;
+}
+
+body .site>article {
+    opacity: 0;
+    transform: translateX(-10em);
+    transition:
+        opacity 0.5s ease-in 0.5s,
+        transform 0.5s ease-in 0.5s;
+}
+
+body.loaded .site>article {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+article header h2 {
+    text-align: center;
+    animation: jiggle 5s ease-in 2s infinite;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-3em);
+    }
+
+    50% {
+        transform: translateX(3em);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+article section :first-child {
+    display: inline-block;
+    animation: spin 5s ease infinite;
+
+    /* rotate the element when move the scroll */
+    /* animation: spin linear both;
+    animation-timeline: scroll(); */
+}
+
+@keyframes spin {
+    to {
+        transform: rotateY(3turn);
+    }
+}
+
+article p+p { /* for all paragraphs after the first one*/
+    opacity: 0;
+    animation: fade-away linear both;
+    animation-timeline: view();
+    animation-range: contain;
+}
+
+@keyframes fade-away {
+    to {
+        opacity: 1
+    }
 }

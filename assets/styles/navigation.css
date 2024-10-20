@@ -20,10 +20,20 @@
     text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 0.5em;
+    transform: rotate(-30deg);
+    transition: 
+        background-color 0.3s ease-in,
+        color 0.3s ease-in,
+        transform 0.3s ease-in;
 }
 
 .main-nav li.current-page > a,
 .main-nav a:hover {
     background-color: darkorange;
     color: white;
+}
+
+.site-header:hover li a {
+    transform: rotate(30deg);
+    /* transform: translate(1em, 2em); */
 }
