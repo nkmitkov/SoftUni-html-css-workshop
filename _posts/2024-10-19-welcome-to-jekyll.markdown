@@ -1,6 +1,6 @@
 ---
 layout: blog
-title:  "Welcome to Jekyll!"
+title:  "Post from github.dev"
 date:   2024-10-20 18:37:37 +0300
 categories: github dev
 ---
