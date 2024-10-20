@@ -1,0 +1,38 @@
+<form action="https://formspree.io/f/xqakazry" method="POST" class="contact">
+
+    <fieldset>
+        <legend>User details:</legend>
+
+        <div class="field text icon-username">
+            <input type="text" name="full-name" id="name" required>
+            <i class="fa fa-user"></i>
+            <label for="name">Full Name: </label>
+        </div>
+
+        <div class="field text icon-email">
+            <input type="email" name="email" id="email" required>
+            <label for="email">Email: </label>
+            <i class="fa fa-envelope"></i>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Message:</legend>
+
+        <div class="field text textarea">
+            <textarea name="subject" id="subject" required></textarea>
+            <label for="subject">Subject:</label>
+            <i class="fa-solid fa-comment"></i>
+        </div>
+
+        <div class="field text textarea">
+            <textarea name="message" id="message" required></textarea>
+            <label for="message">Message:</label>
+            <i class="fa-solid fa-message"></i>
+        </div>
+
+    </fieldset>
+
+    <input type="submit" value="Send">
+
+</form>

@@ -1,15 +1,10 @@
-.main-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* .main-nav {
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
     padding: 0.5em;
-}
+} */
 
 .main-nav ul {
-    margin-left: 30vw;
     display: flex;
     padding: 0;
 }

@@ -1,0 +1,115 @@
+fieldset {
+    padding: 1em 1.5em;
+    border: 2px solid #ccc;
+    border-radius: 0.2em;
+    margin: 0 0 1em 0;
+}
+
+legend {
+    padding: 0.5em;
+    margin-left: -0.5em;
+}
+
+textarea,
+label,
+input {
+    display: block;
+    width: 100%;
+}
+
+textarea,
+input {
+    outline: none;
+    padding: 0.6em 0.8em;
+}
+
+input[type="submit"] {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.4em;
+    border: 2px solid #ccc;
+    background-color: #e2e2e2;
+    color: darkorange;
+    margin-top: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+textarea,
+input:is([type="text"], 
+[type="email"], 
+[type="password"]) {
+    border-radius: 0.4em;
+    color: darkorange;
+
+    &:focus {
+    border: 2px solid darkorange;
+
+        &~label {
+            color: darkorange;
+        }
+
+        &~i {
+            border-color: darkorange;
+            background-color: rgb(255, 184, 51);
+            color: white;
+        }
+    }
+
+    &.invalid {
+        border-color: red;
+
+        &~label {
+            color: red;
+        }
+
+        &~i {
+            border-color: red;
+            background-color: red;
+            color: rgba(44, 63, 82, 1);
+        }
+    }
+}
+
+.contact {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
+.field {
+    padding-bottom: 0.5em;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.field label {
+    order: -1;
+}
+
+.field i {
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    border: 2px solid rgba(44, 63, 82, 1);
+    border-radius: 0.4em;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.field textarea,
+.field input {
+    width: auto;
+    flex: 1 0 auto;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

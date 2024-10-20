@@ -4,4 +4,4 @@ title: Contacts
 permalink: /contacts/
 ---
 
-Hello there from contacts!
+{% include form/contact.html %}

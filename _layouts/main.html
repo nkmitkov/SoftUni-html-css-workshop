@@ -1,15 +1,17 @@
 {% include /base/header.html %}
 
-    <article>
+<article>
+    <header>
         <h2>{{ page.title }}</h2>
+    </header>
 
-        <section>
-            {{ content }}
-        </section>
-    </article>
+    <section>
+        {{ content }}
+    </section>
+</article>
 
-    {% if page.VIP %}
-        <h3>The VIP is: {{ page.VIP }}</h3>
-    {% endif %}
+{% if page.VIP %}
+<h3>The VIP is: {{ page.VIP }}</h3>
+{% endif %}
 
 {% include /base/footer.html %}
